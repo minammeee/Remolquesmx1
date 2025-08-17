@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remolques MX - Fabricación Premium</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #1f2937;
+      background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top:0; left:0; right:0; bottom:0;
+      background: rgba(255,255,255,0.85);
+      z-index: -1;
+    }
+    section {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 1rem;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 1150px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      transition: transform 0.2s ease-in-out;
+    }
+    section:hover { transform: translateY(-3px); }
+    h2 { font-weight: 700; font-size: 2rem; color: #2c1a0e; }
+    .btn { background-color: #4b2c20; color: #fff; padding: 0.75rem 1.5rem; border-radius: 0.75rem; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,0.2); text-decoration:none; transition: 0.2s ease; display:inline-block;}
+    .btn:hover { background-color:#6b4e31; transform:translateY(-2px);}
+    .whatsapp-float { position: fixed; width:60px; height:60px; bottom:20px; right:20px; background-color:#4b2c20; color:#fff; border-radius:50%; display:flex; justify-content:center; align-items:center; font-size:28px; box-shadow:2px 2px 6px rgba(0,0,0,0.4); transition:0.2s; z-index:1000;}
+    .whatsapp-float:hover { transform: scale(1.1); background-color:#6b4e31;}
+    .map-container { border:3px solid #4b2c20; border-radius:0.75rem; overflow:hidden; }
+  </style>
+</head>
+<body>
 
+<!-- Header -->
+<header class="bg-gray-900 bg-opacity-80 text-white py-6 shadow-lg">
+  <div class="max-w-6xl mx-auto flex justify-between items-center px-6 flex-wrap gap-4">
+    <h1 class="text-3xl font-bold">Remolques MX</h1>
+    <div class="flex gap-4 flex-wrap">
+      <a href="https://wa.me/523347540496" target="_blank" class="btn">Cotiza en WhatsApp</a>
+      <a href="https://www.facebook.com/RemolquesMX" target="_blank" class="btn">Facebook</a>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="text-center">
+  <h2 class="mb-4">Fabricación de Remolques Premium</h2>
+  <p class="mb-6 text-lg max-w-2xl mx-auto">Remolques hechos a medida con acabados en madera tratada y estructura de acero reforzado.</p>
+  <img src="https://images.unsplash.com/photo-1520032524848-3a5abac29dab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Remolque MX" class="mx-auto rounded-lg shadow-lg" loading="lazy" />
+</section>
+
+<!-- Catálogo -->
+<section>
+  <h2 class="mb-4 text-center">Catálogo de Remolques</h2>
+  <p class="text-center mb-6 text-lg max-w-xl mx-auto">Descubre nuestros modelos de carga, RZR, ganaderos, food trucks y multiuso. ¡Próximamente más opciones!</p>
+  <div class="grid md:grid-cols-3 gap-6 text-center font-semibold text-gray-700">
+    <div class="border-2 border-amber-900 p-6 rounded-lg bg-amber-50 shadow-md">
+      <p>Remolque de Carga</p>
+      <p class="text-sm mt-2">Ideal para transporte pesado. Personalizable.</p>
+    </div>
+    <div class="border-2 border-amber-900 p-6 rounded-lg bg-amber-50 shadow-md">
+      <p>Food Truck</p>
+      <p class="text-sm mt-2">Diseñado para negocios móviles. Moderno y funcional.</p>
+    </div>
+    <div class="border-2 border-amber-900 p-6 rounded-lg bg-amber-50 shadow-md">
+      <p>Remolque Multiuso</p>
+      <p class="text-sm mt-2">Versátil para cualquier necesidad.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contacto -->
+<section>
+  <h2 class="mb-4 text-center">Contacto</h2>
+  <p class="text-center mb-6 text-lg max-w-xl mx-auto">Cotizaciones, pedidos o más información.</p>
+  <div class="flex flex-col md:flex-row justify-center items-center gap-6 flex-wrap text-center">
+    <a href="https://wa.me/523347540496" target="_blank" class="btn">WhatsApp</a>
+    <a href="https://www.facebook.com/RemolquesMX" target="_blank" class="btn">Facebook</a>
+    <p class="text-lg font-semibold">📞 Tel: +52 33 4754 0496</p>
+    <p class="text-lg font-semibold">✉️ Email: contacto@remolquesmx.com</p>
+  </div>
+
+  <!-- Mapa embebido correctamente -->
+  <div class="mt-8 map-container">
+    <iframe 
+      class="w-full h-72 rounded-lg"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.547216623137!2d-103.44041998509137!3d20.677116786191837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b1a73fdd0bb1%3A0x7de7a8d9c2d9d998!2sRemolques%20MX!5e0!3m2!1ses!2smx!4v1697680000000!5m2!1ses!2smx" 
+      frameborder="0" 
+      allowfullscreen 
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 bg-opacity-90 text-white py-6 mt-12 text-center text-base">
+  © 2025 Remolques MX - Todos los derechos reservados
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/523347540496" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+      </html>
